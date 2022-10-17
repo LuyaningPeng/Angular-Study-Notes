@@ -23,7 +23,7 @@
 
 #### 2.1 `angular.json`的总体结构
 
-![](E:\Angular\learning\文档\imgs\angular_json.png)
+![](./imgs/angular_json.png)
 
 | 属性             | 详情                                                         |
 | ---------------- | ------------------------------------------------------------ |
@@ -42,7 +42,7 @@
 
 2. `projects`目录下就会出现：
 
-   ​	![](E:\Angular\learning\文档\imgs\angular_json_projects.png)
+   ​	![](./imgs/angular_json_projects.png)
 
 ------
 
@@ -54,7 +54,9 @@
 
 每个项目的 `projects:<project_name>` 下都有以下顶层配置属性。
 
-![](E:\Angular\learning\文档\imgs\angular_json_projects01.png)
+![](./imgs/angular_json_projects01.png)
+
+![](./imgs/angular_json_projects01.png)
 
 | 属性          | 详情                                                         |
 | :------------ | :----------------------------------------------------------- |
@@ -71,9 +73,9 @@
 
 Angular生成器的Schematics是一组用来修改项目的instructions。默认情况下，Angular CLI的`ng generate`命令会从`@schematics/angular`包中获取schematic。其命名规范为`schematic-package:schematic-name`。例如：以`ng generate component`命令为例：
 
-![](E:\Angular\learning\文档\imgs\angular_json_schematics01.png)
+![](./imgs/angular_json_schematics01.png)
 
-![](E:\Angular\learning\文档\imgs\angular_json_schematics02.png)
+![](./imgs/angular_json_schematics02.png)
 
 > schema.json文件中properties可参考[官网手册](https://angular.cn/cli/generate)，比看文件更加清晰
 
@@ -129,7 +131,7 @@ Angular生成器的Schematics是一组用来修改项目的instructions。默认
 
    Angular CLI具有两种构建配置：`production`和`development`。默认情况下，`ng build` 命令使用 `production` 配置。
 
-   ![](E:\Angular\learning\文档\imgs\angular_json_projects_architect01.png)
+   ![](./imgs/angular_json_projects_architect01.png)
 
    该配置将应用许多构建优化，包括：
 
@@ -288,23 +290,23 @@ Angular生成器的Schematics是一组用来修改项目的instructions。默认
 
 1. 执行`npm install jquery --save`下载jquery，并自动在`package.json`的`dependencies`中添加依赖项`"jquery": "^3.6.1"`
 
-   ![](E:\Angular\learning\文档\imgs\tsconfig_json_demo01.png)
+   ![](./imgs/tsconfig_json_demo01.png)
 
-   ![](E:\Angular\learning\文档\imgs\tsconfig_json_demo02.png)
+   ![](./imgs/tsconfig_json_demo02.png)
 
 2. 执行`npm install @types/jquery --save-dev`下载jquery的typing文件，即`.d.ts`文件，并自动在`package.json`的`devDependences`中添加依赖项`"@types/jquery": "^3.5.14"`。
 
-   ![](E:\Angular\learning\文档\imgs\tsconfig_json_demo03.png)
+   ![](./imgs/tsconfig_json_demo03.png)
 
-   ![](E:\Angular\learning\文档\imgs\tsconfig_json_demo04.png)
+   ![](./imgs/tsconfig_json_demo04.png)
 
 3. 将`jquery.js`添加到`angular.json`的`styles`列表中，类似于在 `index.html` 添加 `<script>` 标签
 
-   ![](E:\Angular\learning\文档\imgs\tsconfig_json_demo05.png)
+   ![](./imgs/tsconfig_json_demo05.png)
 
 4. 修改`tsconfig.app.json`文件，将`"jquery"`添加到`"types"`列表中
 
-   ![](E:\Angular\learning\文档\imgs\tsconfig_json_demo06.png)
+   ![](./imgs/tsconfig_json_demo06.png)
 
 实例展示：
 
@@ -343,13 +345,13 @@ Angular生成器的Schematics是一组用来修改项目的instructions。默认
 
 * 浏览器成功拿到jquery
 
-     ![](E:\Angular\learning\文档\imgs\tsconfig_json_demo07.png)
+     ![](./imgs/tsconfig_json_demo07.png)
 
 * 演示
 
-  <img src="E:\Angular\learning\文档\imgs\tsconfig_json_demo08.png" style="zoom:80%;" />
+  <img src="./imgs/tsconfig_json_demo08.png" style="zoom:80%;" />
 
-  <img src="E:\Angular\learning\文档\imgs\tsconfig_json_demo09.png" style="zoom:80%;" />
+  <img src="./imgs/tsconfig_json_demo09.png" style="zoom:80%;" />
 
 
 
