@@ -149,8 +149,8 @@ Angular生成器的Schematics是一组用来修改项目的instructions。默认
    | `stylePreprocessorOptions`    | 包含要传给样式预处理器的选项"值-对"。                        |
    | `scripts`                     | 包含一些 JavaScript 脚本文件，用于添加到项目的全局上下文中。这些脚本的加载方式和在 `index.html` 的 `<script>` 标签中添加是完全一样的。 |
    | `budgets`                     | 全部或部分应用的默认尺寸预算的类型和阈值。当构建的输出达到或超过阈值大小时，你可以将构建器配置为报告警告或错误。 |
-   | `fileReplacements`            | 包含一些文件及其编译时替代品。                               |
-| `allowedCommonJsDependencies` | 允许符合`CommonJs`标准的依赖，如`jquery`，如果不申明，会在运行时弹出`warning` |
+   | `fileReplacements`            | 包含一些文件及其编译时替代品。  |
+   | `allowedCommonJsDependencies` | 允许符合`CommonJs`标准的依赖，如`jquery`，如果不申明，会在运行时弹出`warning` |
    
 1. `options\assets`，静态资源文件
    
